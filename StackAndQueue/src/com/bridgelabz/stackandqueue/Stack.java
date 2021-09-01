@@ -17,4 +17,26 @@ public class Stack<K> {
 		stackList.printNodes();
 	}
 	
+	public int peek() {
+		return stackList.getHead().getKey();
+	}
+	
+	public void pop() {
+		stackList.pop();
+	}
+	public boolean isEmpty() {
+		if(stackList.getHead() != null) {
+			return false;
+		}
+		else {
+			return true;
+		}
+	}
+	
+	public int size() {
+		return stackList.size();
+	}
+	
+	
+
 }
