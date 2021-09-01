@@ -16,6 +16,10 @@ public class Queue<K> {
 	public void printQueue() {
 		queueList.printNodes();;
 	}
+	
+	public void dequeue() {
+		queueList.pop();
+	}
 
 
 }
